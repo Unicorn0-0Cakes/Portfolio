@@ -4,7 +4,7 @@
 
 🔬 Acknowledgment
 
-This project is inspired by the work of Code Bullet, who created the original RubiksCubeAI using the Processing (Java) framework. His project demonstrated a Rubik's Cube-solving AI that efficiently handled the cube's complexity using search algorithms and interactive visualization. His innovative approach, shared over seven years ago, sparked widespread interest in puzzle-solving AI and continues to influence developers today. We are deeply grateful for his contributions, which laid the foundation for further exploration. The original repository can be found here.
+This project is inspired by the work of Code Bullet, who created the original RubiksCubeAI using the Processing (Java) framework. His project demonstrated a Rubik's Cube-solving AI that efficiently handled the cube's complexity using search algorithms and interactive visualization. His innovative approach, shared over seven years ago, sparked widespread interest in puzzle-solving AI and continues to influence developers today. We are deeply grateful for his contributions, which laid the foundation for further exploration. The original repository can be found here: https://github.com/Code-Bullet/RubiksCubeAI
 
 ---
 # 🧩 CubeAI
