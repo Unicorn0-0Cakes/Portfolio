@@ -30,6 +30,7 @@ Let’s break down what each category might contain:
 
 ### 2. 🤖 **Machine Learning & AI**
 - **Repositories**:
+  - *CubeAI ported into Lua //current self challenge, will post to YouTube on Unicorn0_0Cakes Studio main channel
   - *AI Unveiled: Applications, Limitations, and Ethical Frontiers* (your book project)
   - *Neural NPCs* – A research project focused on improving game worlds and NPC behavior
   - *PCA & t-SNE* – Your studies in dimensionality reduction
