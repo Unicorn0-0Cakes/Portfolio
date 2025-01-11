@@ -1,3 +1,10 @@
+import sqlite3
+from datetime import datetime
+
+# Connect to the SQLite database (it will create the file if it doesn't exist)
+conn = sqlite3.connect('datasets/chatbot_archive.sqlite')
+cursor = conn.cursor()
+
 -- Create the 'chatbots' table
 CREATE TABLE chatbots (
     chatbot_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -44,3 +51,8 @@ CREATE TABLE tags (
     tag TEXT NOT NULL,
     FOREIGN KEY (chatbot_id) REFERENCES chatbots (chatbot_id)
 );
+
+# Commit changes and close the connection
+conn.commit()
+conn.close()
+print("Database and tables created successfully!")
