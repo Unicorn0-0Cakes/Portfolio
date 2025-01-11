@@ -1,7 +1,7 @@
 import pandas as pd
 
-# Load the chatbot archive dataset (example file path)
-file_path = '/mnt/data/chatbot_archive.csv'
+# Load the chatbot archive dataset
+file_path = '../datasets/chatbots_dataset.csv'
 
 # Read the CSV file
 try:
@@ -12,8 +12,6 @@ try:
         "Columns": list(chatbot_data.columns),
         "Missing Values": chatbot_data.isnull().sum().to_dict(),
     }
+    print(summary)
 except FileNotFoundError:
-    summary = "CSV file not found. Please upload your chatbot archive file."
-
-summary
-
+    print("CSV file not found. Please check the file path.")
