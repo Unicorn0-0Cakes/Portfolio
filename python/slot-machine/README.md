@@ -69,4 +69,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 
-This project was inspired by traditional slot machine games and designed as a beginner-friendly portfolio project to demonstrate Python skills.
+This project is based on a tutorial by [Tech With Tim](https://github.com/techwithtim) and was designed as a beginner-friendly portfolio project to demonstrate Python skills.
