@@ -1,6 +1,3 @@
-Certainly! Here's a comprehensive `README.md` file for **CafeIQ**, your web scraping project tailored for local breakfast restaurants and cafes. This template provides an overview of the project, installation instructions, usage guidelines, and other essential information to assist users and contributors.
-
-```markdown
 # CafeIQ
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
