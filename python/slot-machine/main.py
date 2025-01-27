@@ -5,7 +5,7 @@
 Project Name   : Text-Based Slot Machine
 Description    : Python-based game simulating a virtual slot machine
                  with betting and balance management mechanics.
-Version        : 0.0.1
+Version        : 0.0.2
 Created By     : @Unicorn0-0Cakes
 Date Created   : 2025.01.23
 
@@ -16,6 +16,7 @@ Notes:
 
 """
 
+
 #---
 #plan to add global variables to change themes using a random number generator
 #gv
@@ -23,6 +24,7 @@ Notes:
 
 #import modules
 import random
+import time
 
 #---
 
@@ -258,6 +260,7 @@ def spin(balance):
         if total_bet > balance:
             print(f"Trying to bet like royalty, but your treasury holds only ${balance}!")
             print()  # Adds an empty line
+            time.sleep(0.5) #short delay
         else:
             break
 
@@ -265,15 +268,19 @@ def spin(balance):
     total_bet = bet * lines
     print(f"Math time: ${bet} times {lines} equals a total wager of ${total_bet}. Feeling lucky?")
     print()  # Adds an empty line
+    time.sleep(1) #delay for 1 second
 
     # Spin prompt
     print("Spinning...")
+    print()  # Adds an empty line
+    time.sleep(1)  # Delay for 1 second
     print()  # Adds an empty line
 
     # Generate the slot machine spin
     slots = get_slot_machine_spin(ROWS, COLS, symbol_count)
     print_slot_machine(slots)
     print()  # Adds an empty line
+    time.sleep(1)  # Delay for 1 second
 
     # Calculate winnings
     winnings, winning_lines = check_winnings(slots, lines, bet, symbol_values)
@@ -281,11 +288,17 @@ def spin(balance):
     if winnings > 0:
         print(f"Cha-ching! 💸 You just pocketed ${winnings}.")
         print()  # Adds an empty line
+        time.sleep(1)  # Delay for 1 second
+        print(f"💵 Your balance just got a glow-up and now sparkles at ${balance}. ✨ Even Scrooge McDuck is jealous! 🦆")
+        print()  # Adds an empty line
+        time.sleep(1)  # Delay for 1 second
         print(f"Payday on lines ", *winning_lines, " 🚀")
         print()  # Adds an empty line
+        time.sleep(1)  # Delay for 1 second
     else:
         print("The slot wheels are teasing—better luck next spin! 🎭")
         print()  # Adds an empty line
+        time.sleep(1)  # Delay for 1 second
 
     # Return the net result of the spin (winnings minus the total bet)
     return winnings - total_bet
@@ -307,16 +320,23 @@ def main():
     print()  # Adds an empty line
     print()  # Adds an empty line
 
+    time.sleep(2) #welcome delay
+
     # Calls the deposit function to get the initial balance from the user.
     # The user's deposit is stored in the 'balance' variable.
     balance = deposit()
+    print(f"It’s official—your balance is no longer lonely and now reads ${balance}. Cheers to the start of something rich!")
+    time.sleep(1) #delay for 1 second
+    print()  # Adds an empty line
 
     while True:
         print(f"Your stash: ${balance}. Time to make it rain? 🌧️💸")
         print()  # Adds an empty line
+        time.sleep(0.5) #short delay
 
         ready_to_spin = input("🎰 Are you ready to spin the slot wheels? (Press Enter to play or 'q' to quit)").strip().lower()
         print()  # Adds an empty line
+        time.sleep(0.5) #short delay
 
     # Handle the user's response
         if ready_to_spin == "q":
@@ -327,6 +347,7 @@ def main():
 
         print("Spinning the wheels... Good luck! 🍀🎉")
         print()  # Adds an empty line
+        time.sleep
         balance += spin(balance)
 
 
